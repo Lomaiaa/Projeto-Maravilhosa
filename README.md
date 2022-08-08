@@ -1,28 +1,22 @@
+# Projeto M de Maravilhosa
 
-# Turma On17 Front-end | Semana IV💜
-## Projeto I M de Maravilhosa  :octocat:
+![Foto Zilda Arns](https://al.ms.gov.br/upload/News/Old/37786/FernandaFran%C3%A7a140520131819.jpg)
 
-Prof. Lorena Rabelo
+Esse projeto tem como objetivo aplicar alguns conhecimentos de HTML, CSS e responsividade adiquiridos na aula da semana 5 da Reprograma.
 
-Página Inicial   
-https://m-de-maravilhosa-on17.netlify.app
+Temos 3 seções no site, sendo:
 
+* **Header:** No Header temos o cabeçalho linkando para a home e para o site da Reprograma e uma imagem de Zilda Arns.
 
-### Links bacanas se bater uma dúvida
+* **Informações técnicas:** Aqui traremos algumas informações de origem da Maravilhosa, sua trajetória de vida e fotos.
 
-* [Tags HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element)
-* [Treinando display Flex com jogo do sapo](https://flexboxfroggy.com/#pt-br)
-* [Guia Flex Box](https://origamid.com/projetos/flexbox-guia-completo/)
-* [Guia como subir o código Netlify(apartir do minuto 6 do vídeo](https://www.youtube.com/watch?v=wpbo183GXIA)
+* **Informações aluna:** Nessa seção temos algumas referências minhas, um link para direcionamento para os sites das demais Maravilhosas e o rodapé com mais algumas informações do site e da Reprograma.
 
-### Objetivos da aula (Domingo e Quinta)  :metal:
-1. Revisão rápida CSS
-2. Explicação sobre o projeto 
-3. Desenvolvimento seguindo o [figma](https://www.figma.com/file/NQz2gzpHUgqdpvF0yJnZ1J/M-de-Maravilhosa---on17?node-id=4%3A0)
-5. Colocar a foto da maravilhosa na pasta "img" do drive até segunda-feira
-6. Colocar o link do projeto na planilha até sexta-feira 
+As tecnologias utilizadas foram:
 
-### Desafio para casa :rocket:
+* **HTML**
+* **CSS**
 
-1. Adicionar página sobre a autora 
-2. Na sua página, retirar as redes sociais da reprograma e linkar suas redes socias no footer
+Para inicializar o projeto direto pelo VsCode é necessário abrir o arquivo html através da extensão Live Server ou então inicializá-lo direto da pastinha clonada em seu computador.
+
+Futuramente serão implementadas algumas melhorias de layout e responsividade, além da adequação do campo de busca para que o mesmo funcione corretamente.

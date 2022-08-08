@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  padding: 0;
   margin: 0;
-  text-decoration: none;
-  color: inherit;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #bc1069;
 }
 
 ul {
@@ -14,20 +14,24 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 2px;
+}
+
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
   width: 100%;
+  height: 100%;
+  /* garante que a imagem vai ocupar todo o conteúdo da div sem distorce */
+  object-fit: cover;
 }
 
-/* define o tamanho da caixa */
-.container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 960px;
-}
+/* NAVBAR */
 
 .navbar {
-  background-color: #674582;
+  background-color: #bc1069;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   padding: 24px;
   z-index: 99;
@@ -50,178 +54,306 @@ li {
 
 .navbar__nav {
   font-size: 18px;
-  color: #fff;
   display: flex;
 }
 
 .navbar__nav > li {
   margin: 0 16px;
   font-weight: bold;
+  color: #fff;
 }
 
-.navbar__nav--hamburguer {
-  display: none;
-}
+/* -------------------------------------------------------------------------------- */
+
+/* HEADER */
 
 .header {
   min-height: 80vh;
   width: 100%;
+  /* geralmente corrige distorçao */
   background-size: cover;
-  background-image: url(../img/bg-banner.png);
+  background-image: url(../img/Zilda\ Arns\ Capa.jpg);
+  display: flex;
+  /* align é para eixo Y */
+  align-items: flex-end;
+  /* justify é para eixo X */
+  justify-content:left;
 }
 
-.header__box {
-  max-width: 526px;
-  position: relative;
-  top: 350px;
-  background-color: #f9f1f1;
-  border-radius: 24px;
-  padding: 24px;
+.header__titulo {
+  margin-left: 6rem;
+  font-size: 4.5rem;
+  color: #bc1069;
+  padding: 7rem;
 }
 
-.header__box--titulo {
-  font-size: 26px;
-  color: #63458a;
-}
-
-.header__box--subtitulo {
-  font-size: 18px;
-  margin: 24px 0;
-}
-
-/* define o tamanho da caixa */
-.container {
+main{
   margin: 0 auto;
   width: 100%;
   max-width: 1024px;
+  padding:  0 2rem;
 }
 
-/* --- FOOTER --- */
+.Subtítulo {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
 
-.rodape {
+
+/* --- BOTAO --- */
+
+.button {
+  margin: 3.75 auto;
+  text-align: center;
+  margin: 3rem;
+}
+
+.button__link {
+  text-transform: uppercase;
+  background: #bc1069;
+  border-radius: 0.625rem;
+  padding: 1.188rem 4.125rem;
+  font-weight: bold;
+  color: #ffff40;
+}
+
+.button__link:hover{
+  background-color:#ffff40;
+  color: #bc1069;
+}
+
+/* SECAO Maravilhosa */
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 36px auto;
+}
+
+.minibio {
+  display: flex;
+  max-width: 59.625rem;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.minibio__img {
+  width: 13.125rem;
+  height: 13.125rem;
+  margin-right: 3rem;
+}
+
+.minibio__img img {
+  border-radius: 1rem;
+}
+
+.minibio p {
+  width: 80%;
+  font-size: 1.4rem;
+}
+
+/* citacao */
+
+.citacao {
+  font-size: 2.20rem;
+  border: 0.25rem solid #ffff40;
+  padding: 2.25rem;
+  line-height: 3.125rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.sua-historia {
+  font-size: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.primeiro-parágrafo {
+  padding-top: 1rem;
+}
+
+.segundo-parágrafo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.história p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.historia-img {
+  padding-top: 1rem;
+  ;
+}
+
+/* AUTORA */
+
+.autora {
+  background-color: #bc1069;
+  height: 15rem;
+  display: flex;
+  /* Garante que está centralizado no eixo X */
+  justify-content: center;
+}
+
+.autora__container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.autora__img {
+  max-width: 260px;
+  width: 40%;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+.autora__info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 2.25rem;
+  color: #fff;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+/* FOOTER */
+
+.rodapé {
   background-color: #323534;
   color: white;
+  margin-top: 6rem;
 }
 
-.rodape__principal {
+.rodapé_principal {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.rodape__principal > * {
-  margin: 16px 0;
+.rodapé_principal> *{
+  margin: 1rem 0;
 }
 
-.rodape__navegacao > li {
-  font-size: 14px;
-  margin: 8px;
+.rodapé_nav> li{
+  font-size: 1.125rem;
+  margin: 0.5rem;
 }
 
-.rodape__navegacao a {
-  transition: all 0.5s;
-}
-
-.rodape__navegacao a:hover {
-  color: #c083b9;
-}
-
-.rodape__logo {
-  max-width: 200px;
+.rodapé_logo{
+  max-width: 12.5rem;
   align-items: center;
   justify-content: center;
 }
 
-.rodape__cc {
+.rodapé_detalhes{
   width: 100%;
   background-color: #292a2a;
-  font-size: 14px;
+  font-size: 1.125rem;
   opacity: 0.5;
   text-align: center;
   padding: 10px;
 }
 
-/* --- BOTAO --- */
-
-.btn {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 16px;
-  border-radius: 5px;
-  font-size: 14px;
+.rodapé_redes-sociais img{
+  width: 5%;
 }
 
-.btn_roxo {
-  color: white;
-  background-color: #c083b9;
-  display: block;
-  max-width: 200px;
-  text-align: center;
-  transition: all 0.5s;
-  margin: 0 auto;
-}
-
-.btn_roxo:hover,
-.btn_roxo:focus {
-  transform: translateY(-06px);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  background-color: rgb(192, 156, 188);
+.rodapé_nav a:hover {
+  color: #ffff40;
 }
 
 
-/* --- SECTION MARAVILHOSAS --- */
+/* MEDIA QUERY */
 
-.maravilhosas__titulo {
-  color: #63458a;
-  font-size: 20px;
-  text-align: center;
-  margin: 36px 0;
-}
+@media (max-width: 770px) {
 
-.maravilhosas__box {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  color: #63458a;
-}
-
-.maravilhosas__perfil {
-  margin: 2rem;
-  text-align: center;
-}
-
-.maravilhosas__perfil img {
-  background-color: #63458a;
-  border-radius: 10px;
-}
-
-.maravilhosas__perfil a img {
-  transition: all 0.5s;
-  width: 160px;
-  height: 160px;
-}
-
-
-@media (max-width: 768px) {
   .navbar__nav {
     display: none;
   }
+
   .navbar__nav--hamburguer {
     display: block;
-    height: 36px;
-  }
-  .navbar {
-    height: 96px;
-  }
-  .navbar__logo {
-    max-width: 196px;
-  }
-  .container {
-    max-width: 80vw;
+    height: 2.25rem;
   }
 
-  .rodape__principal {
-    flex-direction: column;
+  .navbar {
+    height: 6rem;
+  }
+
+  .navbar__logo {
+  max-width: 12.25rem;
+  }
+
+  .container {
+  max-width: 80vw;
+  }
+
+  .rodapé_principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
 }
+
+@media (max-width: 600px){
+
+  *{
+    font-size: 0.75rem;
+  }
+
+  .Subtítulo{
+    font-size: 1.8rem;
+  }
+
+  .minibio{
+    flex-direction: column;
+  }
+
+  .minibio__img{
+    min-width: 21.875rem;
+  }
+
+
+  .minibio p{
+    padding-top: 1rem;
+  }
+
+  .sua-historia{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 380px){
+  *{
+    font-size: 0.625rem;
+  }
+
+  .header{
+    width: 90vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .button__link{
+    font-size: 0.875rem;
+  }
+
+  .rodapé_principal {
+    flex-direction: column;
+  }
+
+}
+
+
